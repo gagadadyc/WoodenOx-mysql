@@ -1,0 +1,15 @@
+[connection_parameter]    
+user = 
+password = 
+host = 127.0.0.1
+database = 
+
+[execution_time]
+# format: year-month-day hour:minute:second
+EXtime = 2017-08-31 06:41:30
+
+
+
+[SQL]    
+INSERT INTO `haut`.`zzz` (`name`) 
+VALUES ('333yz');
