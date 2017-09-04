@@ -1,7 +1,6 @@
 import time
 
 
-print(time.strftime("%Y-%m-%d %H:%M:%S %p", time.localtime()))
 # 链接参数字典
 ConnParDict = {
     'user': "",
@@ -60,6 +59,9 @@ def reConnParameter():
         exit(1)
     return ConnParDict
 
+# 读取并格式化时间,如果有非法输入则提示并exit程序
+# 返回的是一个2017-8-28 20:07格式的字符串
+
 
 def reTime():
     draw = False
@@ -90,6 +92,7 @@ def reTime():
                 exit(1)
             else:
                 EXtime = timeArr[1].strip()
+                break
     # for end
     # 如果没读到时间则向用户报错
     if not ETMark:
@@ -137,6 +140,8 @@ def reSQL():
             continue
         if draw:
             # 跳过空行
+            if line.strip() == "":
+                continue
             SQL = SQL+line
     # for end
     # 读不到SQL语句则向用户报错

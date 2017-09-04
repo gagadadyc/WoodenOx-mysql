@@ -1,15 +1,18 @@
 [connection_parameter]    
-user = 
-password = 
+user = example
+password = example
 host = 127.0.0.1
-database = 
+database = exampleDB
 
 [execution_time]
 # format: year-month-day hour:minute:second
-EXtime = 2017-08-31 06:41:30
+EXtime = 2017-09-04 18:48:30
 
 
 
 [SQL]    
-INSERT INTO `haut`.`zzz` (`name`) 
-VALUES ('333yz');
+ALTER TABLE `example`
+ADD INDEX `name` (`name`);
+
+INSERT INTO `test`.`example` (`name`) 
+VALUES ('imdyc.com');
