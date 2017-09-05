@@ -16,7 +16,7 @@ Plan Event script for mysql
 （功能3、4暂未实现）
 1. SQL语句定时执行 
 2. 将查询结果生成日志，日志的格式如下：
-   [本地时间]  [时间名称]  [user@host]  [执行时间]  [执行的SQL语句]
+   本地时间  时间名称  user@host  执行时间  执行的SQL语句
    例：2017-09-04 21:31:17  OXEvent20170904213117  dyc@localhost  2017-09-07 8:48:30  INSERT INTO testDB.testTable (name)  VALUES ('imdyc');
 3. 查询已经提交的计划
 4. 通过监控mysql，当mysql执行了event时、将影响的行数、是否执行成功、抛出的警告等信息记录在日志中（使用MySQL Enterprise Monitor？）
